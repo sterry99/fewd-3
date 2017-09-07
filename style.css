@@ -84,6 +84,7 @@ input[type="radio"] {
 
 label, .title {
     color: #345487;
+    margin-bottom: 5px;
 }
 
 button {
