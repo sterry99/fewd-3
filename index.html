@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration Form</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+        <link rel="stylesheet" href="normalize.css">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <header>
+            <h1>THE CODE REVIEW</h1>
+        </header>
+        <section>
+            <div class="intro">
+                <h2>Signup for our newsletter</h2>
+                <p>Get the latest news on how your code is doing right in your inbox</p>
+            </div>
+            <form action="index.html" method="post">
+                <fieldset class="contact">
+                    <legend class="extra-border">Contact Information</legend>
+                    <label for="name">Full Name</label>
+                    <input id="name" type="text" name="user_name" placeholder="Required" required>
+
+                    <label for="email">Email Address</label>
+                    <input id="email" type="email" name="user_email" placeholder="Required" required>
+
+                    <label for="tel">Phone Number</label>
+                    <input id="tel" type="tel" name="user_tel">
+
+                    <label for="address">Street Address</label>
+                    <input id="address" type="text" name="user_address">
+
+                    <label for="city">City</label>
+                    <input id="city" type="text" name="user_city">
+
+                    <label for="state">State</label>
+                    <select id="state" name="user_state">
+                        <option selected hidden disabled>Choose State</option>
+                        <option value="western_australia">Western Australia</option>
+                        <option value="nsw">New South Wales</option>
+                        <option value="nt">Northern Territory</option>
+                        <option value="qld">Queensland</option>
+                        <option value="sa">South Australia</option>
+                        <option value="tas">Tasmania</option>
+                        <option value="western_australia">Western Australia</option>
+                    </select>
+
+                    <label for="zip">Zip Code</label>
+                    <input id="zip" type="text" name="user_name">
+                </fieldset>
+                <fieldset class="newsletter">
+                    <legend>Newsletter</legend>
+                    <p class="title">Select the Newsletters you would like to recieve</p>
+
+
+                    <input type="checkbox" id="html" value="html_news" name="user_news"><label for="html">HTML News</label><br><br>
+
+                    <input type="checkbox" id="css" value="css_news" name="user_news"><label for="css">CSS News</label><br><br>
+
+                    <input type="checkbox" id="javascript" value="user_news" name="javascript_news"><label for="javascript">Javascript News</label><br><br>
+
+                    <p class="title">Newsletter Format</p>
+
+                    <input type="radio" id="html_format" value="html_format" name="user_format"><label for="html_format">HTML</label><br><br>
+
+                    <input type="radio" id="plain_text_format" value="plain_text_format" name="user_format"><label for="plain_text_format">Plain Text</label><br><br>
+
+                    <p class="title">Other topics you'd like to hear about</p>
+                    <textarea id="title" name="user_feedback" placeholder="Add your feedback here"></textarea>
+
+                    <button type="submit">Sign Up</button>
+
+                    <p class="light">Copyright The Code Review</p>
+                </fieldset>
+            </form>
+        </section>
+    </body>
+</html>
